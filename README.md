@@ -1,2 +1,4 @@
 # snr-loop-merger
- Merges SNR format files together with an initial and a looping part. Code by plencka.
+ Merges ``.snr`` (EA Layer 3) files together with an initial and a looping part. 
+ 
+ Credit to [plencka/Auntie Owl](https://github.com/plencka) for the code.
