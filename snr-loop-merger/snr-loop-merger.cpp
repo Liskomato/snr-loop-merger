@@ -178,21 +178,18 @@ int main(int Argc, char** Argv)
     }
 
     if (!parse) {
-        printf("Could not parse arguments. Terminating....");
-        system("pause");
+        cerr <<  "Could not parse arguments. Terminating...." << std::endl;
         return 0;
     }
 
     if (Args.input.empty()) {
         cerr << "You must specify an input filename." << std::endl;
-        system("pause");
         return 0;
     }
 
     if (Args.output.empty())
     {
         cerr << "You must specify an output filename." << std::endl;
-        system("pause");
         return 0;
     }
 
@@ -203,6 +200,6 @@ int main(int Argc, char** Argv)
         ProcessLoopMerge(Args);
     }
    
-    system("pause");
+    
     return 0;
 }
